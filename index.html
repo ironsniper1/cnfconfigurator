@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Line Editor</title>
     <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            max-width: 60%;
+        }
         .line {
             display: flex;
             align-items: center;
@@ -20,24 +31,24 @@
             color: red;
         }
         .image-container {
-            position: absolute;
-            top: 10px;
-            right: 10px;
+            max-width: 35%;
         }
         .image-container img {
-            width: 50%; /* Set the width to 50% of the original size */
+            width: 75%; /* Set the width to 75% of the original size */
             height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
 <body>
-    <h1>Upload and Edit File</h1>
-    <p>Click upload to upload your FREEMCB.CNF</p>
-    <input type="file" id="fileInput" accept=".CNF">
-    <div id="errorContainer" class="error"></div>
-    <div id="linesContainer"></div>
-    <button id="addLine">Add New Line</button>
-    <button id="saveFile">Save File</button>
+    <div class="content">
+        <h1>Upload and Edit File</h1>
+        <p>Click upload to upload your FREEMCB.CNF</p>
+        <input type="file" id="fileInput" accept=".CNF">
+        <div id="errorContainer" class="error"></div>
+        <div id="linesContainer"></div>
+        <button id="addLine">Add New Line</button>
+        <button id="saveFile">Save File</button>
+    </div>
     <div class="image-container">
         <img src="https://raw.githubusercontent.com/ironsniper1/cnfconfigurator/main/example.png" alt="Example Image">
     </div>
