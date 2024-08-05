@@ -14,9 +14,19 @@
             margin-right: 10px;
             width: 300px; /* Adjust the width to make the input boxes longer */
             height: 60px; /* Adjust the height to fit multiple lines */
+            resize: none; /* Disable resizing */
         }
         .error {
             color: red;
+        }
+        .image-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -28,6 +38,9 @@
     <div id="linesContainer"></div>
     <button id="addLine">Add New Line</button>
     <button id="saveFile">Save File</button>
+    <div class="image-container">
+        <img src="example.png" alt="Example Image">
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
