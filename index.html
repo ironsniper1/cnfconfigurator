@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Line Editor</title>
+    <style>
+        .line {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        .line textarea {
+            margin-right: 10px;
+            width: 300px; /* Adjust the width to make the input boxes longer */
+            height: 60px; /* Adjust the height to fit multiple lines */
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload and Edit File</h1>
+    <p>Click upload to upload your FREEMCB.CNF</p>
+    <input type="file" id="fileInput" accept=".CNF">
+    <div id="errorContainer" class="error"></div>
+    <div id="linesContainer"></div>
+    <button id="addLine">Add New Line</button>
+    <button id="saveFile">Save File</button>
+    <script src="script.js"></script>
+</body>
+</html>
